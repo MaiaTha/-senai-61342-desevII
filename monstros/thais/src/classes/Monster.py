@@ -31,4 +31,3 @@ class Monster:
         else:
             self.life = 0
             print("%s morreu no duelo!" % self.nome)
-
