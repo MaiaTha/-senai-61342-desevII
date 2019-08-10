@@ -19,5 +19,7 @@ class Battle:
             if monster2.life <= 0:
                 winner = monster1
                 break
-        print("O vencedor foi %s do tipo %s , e durou %s rodadas!" % (winner.nome, winner.type, round))
+        print("Batalha entre %s vs %s" % (monster1.nome, monster2.nome))
+        print("O vencedor foi %s do tipo %s, e durou %s rodadas!" % (winner.nome, winner.type, round))
+        print()
         return winner
