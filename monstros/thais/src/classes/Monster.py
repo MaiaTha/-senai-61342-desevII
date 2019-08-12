@@ -28,6 +28,8 @@ class Monster:
 
         self.nome = nome
         self.type = type
+        self.new_life = self.life
+
 
     def ataque(self):
         return self.power_at * self.evolution * self.nivel * randint(1, 5)
@@ -40,3 +42,6 @@ class Monster:
         if damage < 0:
             damage = 1
         self.life -= damage
+
+
+
